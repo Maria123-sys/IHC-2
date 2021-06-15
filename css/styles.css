@@ -62,7 +62,7 @@ header {
     align-items: center;
     color: rgb(253, 252, 250);
     padding: 0px 100px 0;
-    background-color: hsl(189, 87%, 63%);
+    background-color: #34d8f5;
 }
 header h2{
     font-family: 'Quicksand', sans-serif;
@@ -105,6 +105,10 @@ header nav li:last-child {
         flex-direction: column;
     }
 }
+
+
+
+
 .hero {
     position: relative;
     justify-content: center;
@@ -112,6 +116,7 @@ header nav li:last-child {
     color: #fff;
     text-align: center;
     align-items: center;
+    margin:0;
 }
 
 .hero .background-image{
@@ -121,8 +126,8 @@ header nav li:last-child {
     width:100%;
     height: 100%;
     background-size: cover;
-    background-color: #5aadf1;
     z-index: -1;
+  
 }
 .hero .background-image:after{
     content: '';
@@ -131,8 +136,8 @@ header nav li:last-child {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #414a4f;
-    opacity: 0.75;
+    
+    
    
 }
 .hero h1 {
@@ -145,9 +150,61 @@ header nav li:last-child {
     font: bold 60px 'Open Sans', sans-serif;
     padding-top: 90px;
 }
+
+
+
+
+.video{
+    background-color: #57BFFF;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 0;
+    padding-top: 50px;
+}
+
+.video .background-image{
+    /* position: absolute;*/
+     top: 0;
+     left: 0;
+     width:100%;
+     height: 560px;
+     background-size:cover;
+     background-color: #414a4f;
+     margin:0;
+ }
+ .video .background-image:after{
+     content: '';
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 560px;  
+
+ }
+
+ .video h1{
+    font: bold 40px 'Open Sans', sans-serif;
+    padding-bottom: 120px;
+    margin-bottom: -120px;
+    color:rgb(253, 252, 250);
+}
+.video h2 img{
+    max-width: 290px;
+    padding-right: 5px;
+    padding-top: 10px;
+    vertical-align: middle;
+    height: 290px;
+    
+}
+
+
+
+
+
 .porqueadopt{
     background-color: rgb(240, 139, 8);
-   
     justify-content: center;
     display: flex;
     align-items: center;
@@ -167,15 +224,18 @@ header nav li:last-child {
 }
 .porqueadopt .grid li p{
    color:#fff;
-   font: 25px 'Open Sans', sans-serif;
+   font: bold 25px 'Open Sans', sans-serif;
 }
+
+
+
 .quienes-somos {
     /*position: relative;*/
     justify-content: center;
   
     color: #fff;
     text-align: center;
-    background-color: #5aadf1;
+    background-color: #34d8f5;
     margin:0;
     padding:0;
     align-items: center;
@@ -209,16 +269,16 @@ header nav li:last-child {
 }
 .quienes-somos p{
     margin: 15px,15px;
-    font: 25px 'Open Sans', sans-serif;
+    font: bold 25px 'Open Sans', sans-serif;
    
   
 }
 .mision-vision{
 
     
-    color: #fff;
+    color: #000000;
 
-    background-color: hsl(189, 87%, 63%);
+    background-color: #57BFFF;
     margin:0;
     padding:0;
    
@@ -231,7 +291,7 @@ header nav li:last-child {
  }
 
 .mision-vision .capa h5 {
-    font: 25px 'Open Sans', sans-serif;
+    font: bold 25px 'Open Sans', sans-serif;
     margin-bottom: 25px;
     color:rgb(253, 252, 250);
     
@@ -244,7 +304,7 @@ header nav li:last-child {
 }
 .mision-vision p{
     color:rgb(253, 252, 250);
-    font: 25px 'Open Sans', sans-serif;
+    font: bold 25px 'Open Sans', sans-serif;
 
     margin: 15px,15px;
      
@@ -258,8 +318,8 @@ header nav li:last-child {
 .mision-vision img{
     
   
-    width:50%;
-    height:560px;
+    width:70%;
+    height:890px;
     background-size:cover ;
     background-size:cover;
     margin:0;
@@ -276,7 +336,7 @@ header nav li:last-child {
   
     color: #fff;
     text-align: center;
-    background-color: #5aadf1;
+    background-color: #34d8f5;
     margin:0;
     padding:0;
     align-items: center;
@@ -314,10 +374,23 @@ header nav li:last-child {
 }
 .cobertura p{
     
-    font: 25px 'Open Sans', sans-serif;
+    font: 21px 'Open Sans', sans-serif;
     left:45px;
   
 }
+.cobertura p2{
+    font:bold 27px 'Open Sans', sans-serif;
+    left:45px;
+    padding-right: 420px;
+
+}
+.cobertura p3{
+    font: 21px 'Open Sans', sans-serif;
+    padding-right: 420px;
+    left:45px;
+    display: flex;
+}
+
 .footer{
     display: flex;
 	flex-direction: column;
