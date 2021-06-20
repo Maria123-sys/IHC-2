@@ -15,6 +15,7 @@ a {
 	text-decoration: none;
 	color: inherit;
 	opacity: 0.9;
+    font-weight: bold;
 }
 a:hover {
     opacity: 3;
@@ -51,10 +52,10 @@ ul.grid {
 /*header*/
 
 header {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     height:10%;
     display: flex;
@@ -62,36 +63,42 @@ header {
     align-items: center;
     color: rgb(253, 252, 250);
     padding: 0px 100px 0;
-    background-color: #34d8f5;
+    background-color: #57BFFF;
+
 }
 header h2{
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
 }
-
-
 
 header nav {
     display: flex;
 }
 
 header nav li {
-    margin: 0px 35px;
-    
+    margin: 0px 25px;
 }
 header nav li:first-child {
     margin-left:0; 
 }
 header h2 img {
-    max-width: 100px;
-    padding-right: 5px;
+    width: 50px;
+    max-width: 50px;
+    margin-left: -75px;
+    margin-right: 10px;
+    padding-right: 10px;
     padding-top: 15px;
+    padding-bottom: 0px;
     vertical-align: middle;
+    margin-bottom: 5px;
+    padding-top: 0px;
 }
 
 
 header nav li:last-child {
-    margin-right: 0;
+    margin-right: 0px;
 }
 
 @media(max-width: 1000px){
@@ -100,9 +107,12 @@ header nav li:last-child {
     }
 }
 
-@media(max-width:700px){
+@media(max-width:1300px){
     header{
         flex-direction: column;
+    }
+    header nav li {
+        margin-bottom: 20px;
     }
 }
 
@@ -126,7 +136,8 @@ header nav li:last-child {
     width:100%;
     height: 100%;
     background-size: cover;
-    z-index: -1;
+    background-color: #2196f3;
+    z-index: 0;
   
 }
 .hero .background-image:after{
@@ -136,21 +147,28 @@ header nav li:last-child {
     left: 0;
     width: 100%;
     height: 100%;
-    
-    
-   
+    background-color: #414a4f;
+    opacity: 0.20;
 }
 .hero h1 {
     font: bold 60px 'Open Sans', sans-serif;
-    margin: 25px,15px;
+    margin: 25px;
     padding: 25px;
-
+    z-index: 2;
 }
 .hero h2{
     font: bold 60px 'Open Sans', sans-serif;
-    padding-top: 90px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(240, 139, 8);
+    border-radius: 12px;
+    padding: 15px 40px;
+    margin-top: 20px;
+    z-index: 2;
 }
-
+.hero img {
+    z-index: 2;
+}
 
 
 
@@ -161,6 +179,7 @@ header nav li:last-child {
     display: flex;
     padding-bottom: 0;
     padding-top: 50px;
+    padding-bottom: 35px;
 }
 
 .video .background-image{
@@ -243,6 +262,7 @@ header nav li:last-child {
 
 .quienes-somos .background-image{
    /* position: absolute;*/
+    position: relative;
     top: 0;
     left: 0;
     width:100%;
@@ -250,16 +270,16 @@ header nav li:last-child {
     background-size:cover;
     background-color: #414a4f;
     margin:0;
-  
+
 }
 .quienes-somos .background-image:after{
     content: '';
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 560px;  
-   
+    height: 560px;
+    background-color: #414a4f;
+    opacity: 0.20;
 }
 .quienes-somos h4 {
     font: bold 41px 'Open Sans', sans-serif;
@@ -368,14 +388,14 @@ header nav li:last-child {
 
     /*Esto para que se meustre el texto*/
     position: absolute;
-   
-    padding-right:405px;
+
+    padding-right: 600px;
 
 }
 .cobertura p{
     
     font: 21px 'Open Sans', sans-serif;
-    left:45px;
+    left:35px;
   
 }
 .cobertura p2{
@@ -390,6 +410,39 @@ header nav li:last-child {
     left:45px;
     display: flex;
 }
+
+
+.pricing{
+    background-color: #57BFFF;
+    padding-bottom: 0;
+    padding-top:60px;
+}
+
+
+.pricing p{
+    font:bold 40px 'Open Sans', sans-serif;
+    text-align: center;
+    color:#fff;
+}
+.pricing .rounded-lg {
+    border-radius: 1rem !important;
+}
+
+.pricing .text-small {
+    font-size: 0.9rem !important;
+}
+
+.pricing .custom-separator {
+    width: 5rem;
+    height: 6px;
+    border-radius: 1rem;
+}
+
+.pricing .text-uppercase {
+    letter-spacing: 0.2em;
+}
+
+
 
 .footer{
     display: flex;
