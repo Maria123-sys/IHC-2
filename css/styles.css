@@ -1,3 +1,8 @@
+.logo{
+    width:40px;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -32,15 +37,16 @@ a.btn {
 section {
     display: flex;
     flex-direction: column;
-  
     padding: 120px 0px;
  
 }
+
 @media (max-width: 1000px){
 	section{
 		padding: 20px 0px;
 	}
 }
+
 
 
 ul.grid {
@@ -83,6 +89,9 @@ header nav li {
 header nav li:first-child {
     margin-left:0; 
 }
+header nav li:last-child {
+    margin-right: 0px;
+}
 header h2 img {
     width: 50px;
     max-width: 50px;
@@ -97,8 +106,25 @@ header h2 img {
 }
 
 
-header nav li:last-child {
-    margin-right: 0px;
+
+
+@media(max-width: 750px){
+    header nav li a {
+        font-size: 10px;
+    }
+    header nav li a {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: -15px;
+        padding-right: -15px;
+
+    }
+    header nav li:first-child {
+        margin-left:10px;
+    }
+    header nav li:last-child {
+        margin-right: 10px;
+    }
 }
 
 @media(max-width: 1000px){
@@ -138,7 +164,8 @@ header nav li:last-child {
     background-size: cover;
     background-color: #2196f3;
     z-index: 0;
-  
+	justify-content: center;
+    align-items: center;
 }
 .hero .background-image:after{
     content: '';
@@ -149,11 +176,12 @@ header nav li:last-child {
     height: 100%;
     background-color: #414a4f;
     opacity: 0.20;
+	
 }
 .hero h1 {
     font: bold 60px 'Open Sans', sans-serif;
-    margin: 25px;
-    padding: 25px;
+    margin: 5px;
+    padding: 5px;
     z-index: 2;
 }
 .hero h2{
@@ -167,10 +195,35 @@ header nav li:last-child {
     z-index: 2;
 }
 .hero img {
-    z-index: 2;
+    z-index: 4;
+    width: 550px;
 }
-
-
+@media (max-width: 800px){
+    .hero .background-image {
+        width: 450px;
+		height: 435px;
+		background-size: 900px, 650px;
+    }
+	.hero .background-image:after {
+        width: 450px;
+		height: 435px;
+    }
+    .hero h1 {
+        font-size: 15px;
+		padding-top: -50px;
+		margin-top: -50px;
+    }
+    .hero h2{
+        padding-bottom: 20px;
+		margin-bottom: 0px;
+    }
+	.hero img {
+		width: 250px;
+	}
+}
+@media (max-width: 550px){
+    
+}
 
 .video{
     background-color: #57BFFF;
@@ -203,22 +256,43 @@ header nav li:last-child {
 
  }
 
- .video h1{
+ .video h4{
     font: bold 40px 'Open Sans', sans-serif;
-    padding-bottom: 120px;
-    margin-bottom: -120px;
+	text-align: center;
     color:rgb(253, 252, 250);
 }
 .video h2 img{
     max-width: 290px;
     padding-right: 5px;
-    padding-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     vertical-align: middle;
     height: 290px;
     
 }
-
-
+@media (max-width: 550px){
+    .video {
+        min-height: 100%;
+    }
+    .video h2 img{
+        margin-bottom: 10px;
+		padding-bottom: 10px;
+		max-width: 170px;
+		max-height: 170px;
+    }
+	.video h4{
+        font-size: 1px;
+    }
+	.video video{
+		width: 350px;
+		height: 200px;
+	}
+}
+@media(max-width: 750px){
+    .video h4 {
+        font-size: 20px;
+    }
+}	
 
 
 
@@ -228,7 +302,7 @@ header nav li:last-child {
     display: flex;
     align-items: center;
 }
-.porqueadopt h3{
+.porqueadopt h4{
     font: bold 40px 'Open Sans', sans-serif;
     margin-bottom: 15px;
     color:rgb(253, 252, 250);
@@ -245,7 +319,24 @@ header nav li:last-child {
    color:#fff;
    font: bold 25px 'Open Sans', sans-serif;
 }
-
+@media(max-width: 750px){
+	.porqueadopt{
+		display: column;
+	}
+	.porqueadopt .grid li{
+		flex-basis: 70%;
+	}
+	.porqueadopt .grid li p{
+		font-size: 15px;
+	}
+	.porqueadopt .grid li i img{
+		margin-top: 20px;
+	}
+    .porqueadopt h4 {
+        font-size: 20px;
+		margin-top: 20px;
+    }
+}
 
 
 .quienes-somos {
@@ -293,9 +384,24 @@ header nav li:last-child {
    
   
 }
-.mision-vision{
+@media(max-width: 750px){
+	.quienes-somos p{
+		font-size: 15px;
+		margin: 40px;
+	}
+    .quienes-somos h4 {
+        font-size: 20px;
+		margin-top: 20px;
+    }
+	.quienes-somos .background-image{
+    position: relative;
+    width:100%;
+    height: 360px;
+	}
+}
 
-    
+
+.mision-vision{
     color: #000000;
 
     background-color: #57BFFF;
@@ -333,22 +439,39 @@ header nav li:last-child {
    padding-right: 90px;
    
 }
-
-
 .mision-vision img{
-    
-  
     width:70%;
     height:890px;
-    background-size:cover ;
     background-size:cover;
     margin:0;
     float: left; 
     padding: 0;
- 
 }
+@media(max-width: 750px){
+	.mision-vision p{
+		font-size: 15px;
+		margin: 40px;
+		margin-left: -40px;
+		padding-left: 0px;
+		padding-right: 9px;
+		float: middle;
+	}
+	.mision-vision .capa{
+		flex-direction: column-reverse;
+		text-align: center;
+		align-items: center;
+		vertical-align: middle;
+	}
+	.mision-vision img{
+		width: 450px;
+		height:890px;
+		float: middle;
+		display: none;
+	}
+}
+
+
 .cobertura{
- 
     background-color: hsl(325, 86%, 46%);
     
     /*position: relative;*/
@@ -410,6 +533,17 @@ header nav li:last-child {
     left:45px;
     display: flex;
 }
+@media(max-width: 750px){
+    .cobertura h6 {
+        font-size: 20px;
+		margin-top: 20px;
+		padding-right: 90px;
+    }
+	.cobertura .background-image{
+		width: 445px;
+		height: 360px;
+	}
+}
 
 
 .pricing{
@@ -441,7 +575,18 @@ header nav li:last-child {
 .pricing .text-uppercase {
     letter-spacing: 0.2em;
 }
-
+@media(max-width: 750px){
+    .pricing .col-lg-4 {
+		width: 370px;
+		margin-left: 40px;
+	}
+	.pricing{
+		justify-content: center;
+	}
+	.pricing p{
+		font-size: 20px;
+	}
+}
 
 
 .footer{
@@ -451,16 +596,16 @@ header nav li:last-child {
 	text-align: center;
 	color: #fff;
 	background-color: rgb(240, 139, 8);
-	padding: 60px 0;
+	padding: 15px 0;
 }
 footer ul{
 	display: flex;
-	margin-bottom: 25px;
 	font-size: 32px;
 }
 
 footer ul li{
-	margin: 0 8px;	
+	margin: 0 8px;
+    margin-bottom: 0px;
 }
 
 footer ul li:first-child{
@@ -468,4 +613,7 @@ footer ul li:first-child{
 }
 footer ul li:last-child{
 	margin-right: 0;	
+}
+footer p {
+    margin-bottom: 0px;
 }
